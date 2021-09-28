@@ -20,16 +20,22 @@ public class Main {
     private static final File file = new File(path);
 
     public static void main(String args[]) {
-        Reader reader;
+        Reader reader = null;
         String msg = "";
         try {
             reader = new Reader(file);
             msg = reader.readAll();
-            reader.close();
         } catch (FileNotFoundException e) {
             LOG.error("Reader exception while initialization" + e.getMessage());
         } catch (IOException e) {
-            LOG.error("Reader exception while reading/closing" + e.getMessage());
+            LOG.error("Reader exception while reading" + e.getMessage());
+        }
+        finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                LOG.error("Reader exception while closing" + e.getMessage());
+            }
         }
 
         if (!CustomValidator.getInstance().isTextLineValid(msg)) {

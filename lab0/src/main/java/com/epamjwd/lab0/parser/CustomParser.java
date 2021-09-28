@@ -2,6 +2,8 @@ package com.epamjwd.lab0.parser;
 
 
 import com.epamjwd.lab0.entity.CustomNumber;
+import com.epamjwd.lab0.factory.CustomFactory;
+import com.epamjwd.lab0.factory.NumberTypes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +34,8 @@ public class CustomParser {
     }
 
     public CustomNumber convertToCustomNumber(String str) throws NumberFormatException{
-        return new CustomNumber(Double.parseDouble(str));
+        CustomNumber customNumber=CustomFactory.getInstance().getNumber(NumberTypes.CustomNumber);
+        customNumber.setValue(Double.parseDouble(str));
+        return customNumber;
     }
 }
