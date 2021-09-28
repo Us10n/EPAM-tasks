@@ -1,0 +1,8 @@
+2021-09-28 09:42:36,049 INFO c.e.l.Main [main] CustomNumber{value=122.0}
+2021-09-28 09:42:36,049 INFO c.e.l.Main [main] CustomNumber{value=-100.0}
+2021-09-28 09:42:36,049 INFO c.e.l.Main [main] CustomNumber{value=1221.0}
+2021-09-28 09:42:36,049 INFO c.e.l.Main [main] CustomNumber{value=0.0990990990990991}
+2021-09-28 09:44:28,268 INFO c.e.l.Main [main] CustomNumber{value=122.0}
+2021-09-28 09:44:28,284 INFO c.e.l.Main [main] CustomNumber{value=-100.0}
+2021-09-28 09:44:28,284 INFO c.e.l.Main [main] CustomNumber{value=0.0}
+2021-09-28 09:44:28,284 INFO c.e.l.Main [main] CustomNumber{value=Infinity}

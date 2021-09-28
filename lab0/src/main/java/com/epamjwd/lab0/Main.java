@@ -44,9 +44,9 @@ public class Main {
             listOfCustomNumbers.add(number);
         }
 
-        LOG.info(CustomOperations.getInstance().add(listOfCustomNumbers));
-        LOG.info(CustomOperations.getInstance().sub(listOfCustomNumbers));
-        LOG.info(CustomOperations.getInstance().mul(listOfCustomNumbers));
-        LOG.info(CustomOperations.getInstance().div(listOfCustomNumbers));
+        LOG.info("Addition result: "+CustomOperations.getInstance().add(listOfCustomNumbers));
+        LOG.info("Subtraction result: "+CustomOperations.getInstance().sub(listOfCustomNumbers));
+        LOG.info("Multiplication result: "+CustomOperations.getInstance().mul(listOfCustomNumbers));
+        LOG.info("Division result: "+CustomOperations.getInstance().div(listOfCustomNumbers));
     }
 }
