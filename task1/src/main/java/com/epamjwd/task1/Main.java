@@ -27,7 +27,7 @@ public class Main {
             }
             doubleArrayList.add(customArray.doubleArray());
         }
-        System.out.println(doubleArrayList);
+
 
 
 
