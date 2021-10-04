@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9318a562-7c89-48ad-b61c-aaca41d5d936" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit3 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1yo1wBzoyl23iVdEX9D2ajfgloF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\epam\task1\src\test\resources" />
+      <recent name="D:\epam\task1\src\main\resources" />
+      <recent name="D:\epam\task1\src\main\java\com\epamjwd\task1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\epam\task1\src\main\resources\data" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.epamjwd.task1.service.impl" />
+      <recent name="com.epamjwd.task1.parser" />
+      <recent name="com.epamjwd.task1.factory" />
+      <recent name="com.epamjwd.task1.entity" />
+      <recent name="com.epamjwd.task1.reader" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.epamjwd.task1.service.impl" />
+      <recent name="com.epamjwd.task1.parcer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epamjwd.task1.Main" />
+      <module name="task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epamjwd.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindServiceImplTest.testGetSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epamjwd.task1.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epamjwd.task1.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.epamjwd.task1.service.impl.FindServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetSum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindServiceImplTest.testGetSumUsingStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epamjwd.task1.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epamjwd.task1.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.epamjwd.task1.service.impl.FindServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetSumUsingStream" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindServiceImplTest.testReplaceByIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epamjwd.task1.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epamjwd.task1.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.epamjwd.task1.service.impl.FindServiceImplTest" />
+      <option name="METHOD_NAME" value="testReplaceByIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.epamjwd.task1 in task1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epamjwd.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epamjwd.task1" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.com.epamjwd.task1 in task1" />
+        <item itemvalue="JUnit.FindServiceImplTest.testGetSumUsingStream" />
+        <item itemvalue="JUnit.FindServiceImplTest.testGetSum" />
+        <item itemvalue="JUnit.FindServiceImplTest.testReplaceByIndex" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9318a562-7c89-48ad-b61c-aaca41d5d936" name="Changes" comment="" />
+      <created>1632903365097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632903365097</updated>
+      <workItem from="1632903366594" duration="3460000" />
+      <workItem from="1632996829803" duration="5375000" />
+      <workItem from="1633006155626" duration="7477000" />
+      <workItem from="1633016207959" duration="7477000" />
+      <workItem from="1633070645124" duration="8891000" />
+      <workItem from="1633332002845" duration="14133000" />
+      <workItem from="1633352179616" duration="8452000" />
+      <workItem from="1633360767979" duration="2791000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="stringList==null" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/task1$com_epamjwd_task1_in_task1.ic" NAME="com.epamjwd.task1 in task1 Coverage Results" MODIFIED="1633360139944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epamjwd.task1.*</FILTER>
+    </SUITE>
+  </component>
+</project>

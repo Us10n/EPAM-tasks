@@ -42,6 +42,7 @@ public class Main {
             } catch (DoubleArrayException e) {
                 e.printStackTrace();
             }
+<<<<<<< HEAD
             Log.info("Sum = "+ findService.getSum(array));
             Log.info("Number of positive= "+findService.getPositiveNumberAmount(array));
             Log.info("Number of negative= "+findService.getNegativeNumberAmount(array));
@@ -49,6 +50,13 @@ public class Main {
             Log.info("SelectSort(DOWN): "+sortService.selectSort(array, SortDirection.DOWN));
             Log.info("ShellSort(UP): "+sortService.shellSort(array, SortDirection.UP));
         });
+=======
+            doubleArrayList.add(customArray.doubleArray());
+        }
+
+
+
+>>>>>>> 33dda93079ed769fe037e304cdc43bd0d99737dc
 
     }
 }
