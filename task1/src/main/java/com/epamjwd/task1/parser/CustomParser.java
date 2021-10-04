@@ -1,10 +1,7 @@
 package com.epamjwd.task1.parser;
 
 
-import com.epamjwd.task1.entity.CustomArray;
 import com.epamjwd.task1.entity.DoubleArray;
-import com.epamjwd.task1.exceptions.IllegalArrayType;
-import com.epamjwd.task1.factory.ArrayType;
 import com.epamjwd.task1.factory.CustomFactory;
 import com.epamjwd.task1.validator.CustomValidator;
 
@@ -22,10 +19,7 @@ public class CustomParser {
         return instance;
     }
 
-    /*
-      Methode divides String(str) to List of String with numbers
-    */
-    public List<String> divideToSubStrings(String str) {
+    private List<String> divideToSubStrings(String str) {
         Scanner scanner = new Scanner(str);
         List<String> list = new ArrayList();
 
@@ -36,27 +30,20 @@ public class CustomParser {
         return list;
     }
 
-    public CustomArray convertStringToCustomArray(String str, ArrayType type) throws NumberFormatException, IllegalArrayType {
-        if (!CustomValidator.getInstance().isTextLineValid(str, type)) {
+    public DoubleArray convertStringToDoubleArray(String str) {
+        if (!CustomValidator.getInstance().isTextLineValid(str)) {
             return null;
         }
 
-        List<Object> arrayofNumbers = new ArrayList();
-        CustomArray customArray = CustomFactory.getInstance().createArray(type);
-        str = str.replaceAll(", +"," ");
-        List<String> numbers = CustomParser.getInstance().divideToSubStrings(str);
-        for (String fstring : numbers) {
-            arrayofNumbers.add(Double.parseDouble(fstring));
+        List<Double> doubleList = new ArrayList();
+        List<String> numbers = divideToSubStrings(str);
+        for (String number : numbers) {
+            doubleList.add(Double.parseDouble(number));
         }
-        switch (type) {
-            case DoubleArray: {
-                DoubleArray toReturn = customArray.doubleArray();
-                toReturn.setArray(arrayofNumbers.toArray(new Double[0]));
-                return toReturn;
-            }
-            default: {
-                throw new IllegalArrayType("Wrong array type: " + type);
-            }
-        }
+        DoubleArray doubleArray=CustomFactory.getInstance().createArray(doubleList.toArray(new Double[0]));
+
+        return doubleArray;
+
     }
 }
+

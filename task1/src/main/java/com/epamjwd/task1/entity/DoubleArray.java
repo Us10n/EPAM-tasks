@@ -2,51 +2,30 @@ package com.epamjwd.task1.entity;
 
 import java.util.Arrays;
 
-public class DoubleArray implements CustomArray {
+public class DoubleArray {
     private Double[] array;
-
-
-    @Override
-    public DoubleArray doubleArray() {
-        return this;
-    }
 
     public DoubleArray(Double[] array) {
         this.array = array;
     }
 
-    public DoubleArray() {
-    }
-
     public Double[] getArray() {
-        return array;
+        return array == null ? null : Arrays.copyOf(array, array.length);
     }
 
     public void setArray(Double[] array) {
-        this.array = array;
+        this.array = array == null ? null : Arrays.copyOf(array, array.length);
     }
 
-    public Integer getSize() {
-        return array.length;
-
+    public DoubleArray() {
     }
-
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         DoubleArray that = (DoubleArray) o;
-        if (this.array.length != that.array.length) return false;
-
-        boolean result = true;
-        for (int i = 0; i < this.array.length; i++) {
-            if (this.array[i] != that.array[i]) {
-                result = false;
-                break;
-            }
-        }
-        return result;
+        return Arrays.equals(array, that.array);
     }
 
     @Override
@@ -63,7 +42,7 @@ public class DoubleArray implements CustomArray {
 
     @Override
     public String toString() {
-        return "CustomArray{" +
+        return "DoubleArray{" +
                 "array=" + Arrays.toString(array) +
                 '}';
     }

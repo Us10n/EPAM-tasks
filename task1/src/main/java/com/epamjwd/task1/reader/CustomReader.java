@@ -1,51 +1,23 @@
 package com.epamjwd.task1.reader;
 
-import com.epamjwd.task1.exceptions.FileCloceException;
-import com.epamjwd.task1.exceptions.FileOpenException;
-import com.epamjwd.task1.parser.CustomParser;
+import com.epamjwd.task1.exception.CustomFileException;
 
-import java.io.*;
-import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CustomReader {
-    private static CustomReader instance;
-    private BufferedReader bReader;
 
-    public static CustomReader getInstance() {
-        if (instance == null) {
-            instance = new CustomReader();
-        }
-        return instance;
-    }
-
-    public String[] readAll(String filepath) throws FileOpenException, FileCloceException {
-        initReader(filepath);
-
-        List<String> result = new ArrayList<>();
-        String line;
-
-        try {
-            while ((line = bReader.readLine()) != null) {
-                result.add(line);
-            }
+    public List<String> readAll(String filepath) throws CustomFileException {
+        List<String> filelines = null;
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath))) {
+            filelines = bufferedReader.lines().collect(Collectors.toList());
         } catch (IOException e) {
-            throw new FileOpenException("File read exception " + e.getMessage());
-        } finally {
-            try {
-                bReader.close();
-            } catch (IOException e) {
-                throw new FileCloceException("File close exception " + e.getMessage());
-            }
+            throw new CustomFileException(e);
         }
-        return result.toArray(new String[0]);
+        return filelines;
     }
 
-    private void initReader(String filepath) throws FileOpenException {
-        try {
-            this.bReader = new BufferedReader(new FileReader(filepath));
-        } catch (FileNotFoundException e) {
-            throw new FileOpenException("Reader init exception " + e.getMessage());
-        }
-    }
 }
