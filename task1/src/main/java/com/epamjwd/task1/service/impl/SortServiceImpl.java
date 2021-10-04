@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.epamjwd.task1.service.impl;
 
 import com.epamjwd.task1.entity.DoubleArray;
@@ -88,28 +87,3 @@ public class SortServiceImpl implements SortService {
         return sortedDoubleArray;
     }
 }
-=======
-package com.epamjwd.task1.service.impl;
-
-import com.epamjwd.task1.entity.CustomArray;
-import com.epamjwd.task1.entity.DoubleArray;
-import com.epamjwd.task1.service.SortDirection;
-import com.epamjwd.task1.service.SortService;
-
-public class SortServiceImpl implements SortService {
-    @Override
-    public CustomArray bubbleSort(DoubleArray customArray, SortDirection direction) {
-        return null;
-    }
-
-    @Override
-    public CustomArray selectSort(DoubleArray customArray, SortDirection direction) {
-        return null;
-    }
-
-    @Override
-    public CustomArray inserSort(DoubleArray customArray, SortDirection direction) {
-        return null;
-    }
-}
->>>>>>> 33dda93079ed769fe037e304cdc43bd0d99737dc
