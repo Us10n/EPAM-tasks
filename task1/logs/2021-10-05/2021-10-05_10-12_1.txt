@@ -1,0 +1,22 @@
+2021-10-05 10:12:35 [main] [main] [32] INFO  com.epamjwd.task1.Main - [DoubleArray{array=[-1.2, -3.45, 5.0, 11.1, 0.0, 10.12]}]
+2021-10-05 10:12:35 [main] [lambda$main$1] [37] INFO  com.epamjwd.task1.Main - Min= -3.45
+2021-10-05 10:12:35 [main] [lambda$main$1] [38] INFO  com.epamjwd.task1.Main - Max= 11.1
+2021-10-05 10:12:35 [main] [lambda$main$1] [39] INFO  com.epamjwd.task1.Main - Average= 3.595
+2021-10-05 10:12:35 [main] [lambda$main$1] [41] INFO  com.epamjwd.task1.Main - After replace(0 index)= DoubleArray{array=[0.0, -3.45, 5.0, 11.1, 0.0, 10.12]}
+2021-10-05 10:12:35 [main] [lambda$main$1] [45] INFO  com.epamjwd.task1.Main - Sum = 21.57
+2021-10-05 10:12:35 [main] [lambda$main$1] [46] INFO  com.epamjwd.task1.Main - Number of positive= 3
+2021-10-05 10:12:35 [main] [lambda$main$1] [47] INFO  com.epamjwd.task1.Main - Number of negative= 2
+2021-10-05 10:12:35 [main] [lambda$main$1] [48] INFO  com.epamjwd.task1.Main - BubbleSort(UP): DoubleArray{array=[-3.45, -1.2, 0.0, 5.0, 10.12, 11.1]}
+2021-10-05 10:12:35 [main] [lambda$main$1] [49] INFO  com.epamjwd.task1.Main - SelectSort(DOWN): DoubleArray{array=[11.1, 10.12, 5.0, 0.0, -1.2, -3.45]}
+2021-10-05 10:12:35 [main] [lambda$main$1] [50] INFO  com.epamjwd.task1.Main - ShellSort(UP): DoubleArray{array=[-3.45, -1.2, 0.0, 5.0, 10.12, 11.1]}
+2021-10-05 10:12:46 [main] [main] [32] INFO  com.epamjwd.task1.Main - [DoubleArray{array=[-1.2, -3.45, 5.0, 11.1, 0.0, 10.12]}]
+2021-10-05 10:12:46 [main] [lambda$main$1] [37] INFO  com.epamjwd.task1.Main - Min= -3.45
+2021-10-05 10:12:46 [main] [lambda$main$1] [38] INFO  com.epamjwd.task1.Main - Max= 11.1
+2021-10-05 10:12:46 [main] [lambda$main$1] [39] INFO  com.epamjwd.task1.Main - Average= 3.595
+2021-10-05 10:12:46 [main] [lambda$main$1] [41] INFO  com.epamjwd.task1.Main - After replace(0 index)= DoubleArray{array=[0.0, -3.45, 5.0, 11.1, 0.0, 10.12]}
+2021-10-05 10:12:46 [main] [lambda$main$1] [45] INFO  com.epamjwd.task1.Main - Sum = 21.57
+2021-10-05 10:12:46 [main] [lambda$main$1] [46] INFO  com.epamjwd.task1.Main - Number of positive= 3
+2021-10-05 10:12:46 [main] [lambda$main$1] [47] INFO  com.epamjwd.task1.Main - Number of negative= 2
+2021-10-05 10:12:46 [main] [lambda$main$1] [48] INFO  com.epamjwd.task1.Main - BubbleSort(UP): DoubleArray{array=[-3.45, -1.2, 0.0, 5.0, 10.12, 11.1]}
+2021-10-05 10:12:46 [main] [lambda$main$1] [49] INFO  com.epamjwd.task1.Main - SelectSort(DOWN): DoubleArray{array=[11.1, 10.12, 5.0, 0.0, -1.2, -3.45]}
+2021-10-05 10:12:46 [main] [lambda$main$1] [50] INFO  com.epamjwd.task1.Main - ShellSort(UP): DoubleArray{array=[-3.45, -1.2, 0.0, 5.0, 10.12, 11.1]}
