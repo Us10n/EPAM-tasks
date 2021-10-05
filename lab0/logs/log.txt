@@ -1,0 +1,4 @@
+2021-10-05 10:35:01 [main] [main] [28] INFO  com.epamjwd.lab0.Main - Addition result: CustomNumber{value=122.32}
+2021-10-05 10:35:01 [main] [main] [29] INFO  com.epamjwd.lab0.Main - Subtraction result: CustomNumber{value=-100.12}
+2021-10-05 10:35:01 [main] [main] [30] INFO  com.epamjwd.lab0.Main - Multiplication result: CustomNumber{value=123.34320000000001}
+2021-10-05 10:35:01 [main] [main] [31] INFO  com.epamjwd.lab0.Main - Division result: CustomNumber{value=0.9989200863930884}

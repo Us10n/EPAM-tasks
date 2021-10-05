@@ -3,7 +3,7 @@ package com.epamjwd.lab0.parser;
 
 import com.epamjwd.lab0.entity.CustomNumber;
 import com.epamjwd.lab0.factory.CustomFactory;
-import com.epamjwd.lab0.factory.NumberTypes;
+import com.epamjwd.lab0.validator.CustomValidator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ public class CustomParser {
     /*
       Methode divides String(str) to List of String with numbers
     */
-    public List<String> divideToStrings(String str) {
+    public List<String> divideToSubStrings(String str) {
         Scanner scanner = new Scanner(str);
         List<String> list=new ArrayList();
 
@@ -33,9 +33,19 @@ public class CustomParser {
         return list;
     }
 
-    public CustomNumber convertToCustomNumber(String str) throws NumberFormatException{
-        CustomNumber customNumber=CustomFactory.getInstance().getNumber(NumberTypes.CustomNumber);
-        customNumber.setValue(Double.parseDouble(str));
-        return customNumber;
+    public List<CustomNumber> convertStringToCustomNumberList(String str) {
+        if (!CustomValidator.getInstance().isTextLineValid(str)) {
+            return null;
+        }
+        List<CustomNumber> customNumberList=new ArrayList<>();
+        List<String> numbers = divideToSubStrings(str);
+        for (String number : numbers) {
+            Double parsedNumber=Double.parseDouble(number);
+            CustomNumber customNumber=CustomFactory.getInstance().getNumber(parsedNumber);
+            customNumberList.add(customNumber);
+        }
+
+        return customNumberList;
+
     }
 }

@@ -1,12 +1,8 @@
 package com.epamjwd.lab0.validator;
 
-import com.epamjwd.lab0.parser.CustomParser;
-import org.apache.commons.lang3.math.NumberUtils;
-
-import java.util.List;
-
 public class CustomValidator {
     private static CustomValidator instance;
+    private static final String REGEX_VALID_TEMPLATE = "^-?\\d+\\.(\\d+)?(\\s-?\\d+\\.(\\d+)?)*$";
 
     public static CustomValidator getInstance() {
         if (instance == null) {
@@ -16,13 +12,6 @@ public class CustomValidator {
     }
 
     public boolean isTextLineValid(String str) {
-        List<String> list=CustomParser.getInstance().divideToStrings(str);
-
-        for(String number: list){
-            if(!NumberUtils.isCreatable(number)){
-                return false;
-            }
-        }
-        return true;
+        return str.matches(REGEX_VALID_TEMPLATE);
     }
 }
