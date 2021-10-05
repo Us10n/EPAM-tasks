@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="error" monitorInterval="43200">
+<Configuration>
     <Properties>
         <property name="pattern_cmd">%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{5} - %m%n</property>
         <property name="pattern_file">%d{yyyy-MM-dd HH:mm:ss} [%t] [%M] [%L] %-5level %logger{5} - %m%n</property>
