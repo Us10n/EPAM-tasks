@@ -11,13 +11,13 @@ import java.util.stream.Collectors;
 public class CustomReader {
 
     public List<String> readAll(String filepath) throws CustomFileException {
-        List<String> filelines = null;
+        List<String> fileLines;
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath))) {
-            filelines = bufferedReader.lines().collect(Collectors.toList());
+            fileLines = bufferedReader.lines().collect(Collectors.toList());
         } catch (IOException e) {
             throw new CustomFileException(e);
         }
-        return filelines;
+        return fileLines;
     }
 
 }

@@ -10,11 +10,11 @@ public class DoubleArray {
     }
 
     public Double[] getArray() {
-        return array == null ? null : Arrays.copyOf(array, array.length);
+        return Arrays.copyOf(array, array.length);
     }
 
     public void setArray(Double[] array) {
-        this.array = array == null ? null : Arrays.copyOf(array, array.length);
+        this.array = Arrays.copyOf(array, array.length);
     }
 
     public DoubleArray() {

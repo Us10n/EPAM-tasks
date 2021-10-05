@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class FindServiceImpl implements FindService {
     @Override
-    public Double getAverage(DoubleArray doubleArray) {
+    public Double average(DoubleArray doubleArray) {
         Double[] doubles = doubleArray.getArray();
         if (doubles.length == 1) {
             return doubles[0];
@@ -21,12 +21,12 @@ public class FindServiceImpl implements FindService {
     }
 
     @Override
-    public Double getAverageUsingStream(DoubleArray doubleArray) {
+    public Double averageUsingStream(DoubleArray doubleArray) {
         return Arrays.stream(doubleArray.getArray()).mapToDouble(Double::doubleValue).average().orElse(Double.NaN);
     }
 
     @Override
-    public Double getMin(DoubleArray doubleArray) {
+    public Double min(DoubleArray doubleArray) {
         Double[] doubles = doubleArray.getArray();
         if (doubles.length == 1) {
             return doubles[0];
@@ -39,12 +39,12 @@ public class FindServiceImpl implements FindService {
     }
 
     @Override
-    public Double getMinUsingStream(DoubleArray doubleArray) {
+    public Double minUsingStream(DoubleArray doubleArray) {
         return Arrays.stream(doubleArray.getArray()).mapToDouble(Double::doubleValue).min().orElse(Double.NaN);
     }
 
     @Override
-    public Double getMax(DoubleArray doubleArray) {
+    public Double max(DoubleArray doubleArray) {
         Double[] doubles = doubleArray.getArray();
         if (doubles.length == 1) {
             return doubles[0];
@@ -57,7 +57,7 @@ public class FindServiceImpl implements FindService {
     }
 
     @Override
-    public Double getMaxUsingStream(DoubleArray doubleArray) {
+    public Double maxUsingStream(DoubleArray doubleArray) {
         return Arrays.stream(doubleArray.getArray()).mapToDouble(Double::doubleValue).max().orElse(Double.NaN);
     }
 
@@ -73,7 +73,7 @@ public class FindServiceImpl implements FindService {
     }
 
     @Override
-    public Double getSum(DoubleArray doubleArray) {
+    public Double sum(DoubleArray doubleArray) {
         Double sum=0.;
         Double[] doubles = doubleArray.getArray();
         for(Double number: doubles) {
@@ -83,17 +83,17 @@ public class FindServiceImpl implements FindService {
     }
 
     @Override
-    public Double getSumUsingStream(DoubleArray doubleArray) {
+    public Double sumUsingStream(DoubleArray doubleArray) {
         return Arrays.stream(doubleArray.getArray()).mapToDouble(Double::doubleValue).sum();
     }
 
     @Override
-    public Long getPositiveNumberAmount(DoubleArray doubleArray) {
+    public Long positiveNumberAmount(DoubleArray doubleArray) {
         Long count = 0L;
         Double[] doubles = doubleArray.getArray();
 
         for (Double aDouble : doubles) {
-            if (aDouble > 0) {
+            if (aDouble >= 0) {
                 count++;
             }
         }
@@ -101,12 +101,12 @@ public class FindServiceImpl implements FindService {
     }
 
     @Override
-    public Long getPositiveNumberAmountUsingStream(DoubleArray doubleArray) {
+    public Long positiveNumberAmountUsingStream(DoubleArray doubleArray) {
         return Arrays.stream(doubleArray.getArray()).mapToDouble(Double::doubleValue).filter(p -> p > 0.).count();
     }
 
     @Override
-    public Long getNegativeNumberAmount(DoubleArray doubleArray) {
+    public Long negativeNumberAmount(DoubleArray doubleArray) {
         Long count = 0L;
         Double[] doubles = doubleArray.getArray();
         for (Double aDouble : doubles) {
@@ -118,7 +118,7 @@ public class FindServiceImpl implements FindService {
     }
 
     @Override
-    public Long getNegativeNumberAmountUsingStream(DoubleArray doubleArray) {
+    public Long negativeNumberAmountUsingStream(DoubleArray doubleArray) {
         return Arrays.stream(doubleArray.getArray()).mapToDouble(Double::doubleValue).filter(p -> p < 0.).count();
     }
 }

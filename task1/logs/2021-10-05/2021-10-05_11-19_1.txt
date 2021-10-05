@@ -1,0 +1,1 @@
+2021-10-05 11:19:38 [main] [main] [31] INFO  com.epamjwd.task1.Main - []

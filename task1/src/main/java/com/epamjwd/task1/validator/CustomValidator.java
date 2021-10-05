@@ -12,6 +12,6 @@ public class CustomValidator {
     }
 
     public boolean isTextLineValid(String str) {
-        return str.matches(REGEX_VALID_TEMPLATE);
+        return str != null && str.matches(REGEX_VALID_TEMPLATE);
     }
 }

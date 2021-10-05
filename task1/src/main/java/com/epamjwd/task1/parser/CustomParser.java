@@ -7,6 +7,7 @@ import com.epamjwd.task1.validator.CustomValidator;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class CustomParser {
@@ -30,9 +31,9 @@ public class CustomParser {
         return list;
     }
 
-    public DoubleArray convertStringToDoubleArray(String str) {
+    public Optional<DoubleArray> convertStringToDoubleArray(String str) {
         if (!CustomValidator.getInstance().isTextLineValid(str)) {
-            return null;
+            return Optional.empty();
         }
 
         List<Double> doubleList = new ArrayList();
@@ -42,7 +43,7 @@ public class CustomParser {
         }
         DoubleArray doubleArray=CustomFactory.getInstance().createArray(doubleList.toArray(new Double[0]));
 
-        return doubleArray;
+        return Optional.ofNullable(doubleArray);
 
     }
 }

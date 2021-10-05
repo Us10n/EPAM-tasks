@@ -1,7 +1,6 @@
 package com.epamjwd.task1.service.impl;
 
 import com.epamjwd.task1.entity.DoubleArray;
-import com.epamjwd.task1.exception.DoubleArrayException;
 import com.epamjwd.task1.service.SortDirection;
 import com.epamjwd.task1.service.SortService;
 

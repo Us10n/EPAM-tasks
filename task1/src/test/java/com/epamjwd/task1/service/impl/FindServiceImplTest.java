@@ -20,42 +20,42 @@ public class FindServiceImplTest {
     @Test
     public void testGetAverage() {
         Double expected = 12.25d;
-        Double actual = findService.getAverage(doubleArray);
+        Double actual = findService.average(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetAverageUsingStream() {
         Double expected = 12.25d;
-        Double actual = findService.getAverageUsingStream(doubleArray);
+        Double actual = findService.averageUsingStream(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetMin() {
         Double expected = -7.1d;
-        Double actual = findService.getMin(doubleArray);
+        Double actual = findService.min(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetMinUsingStream() {
         Double expected = -7.1d;
-        Double actual = findService.getMinUsingStream(doubleArray);
+        Double actual = findService.minUsingStream(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetMax() {
         Double expected = 34.2d;
-        Double actual = findService.getMax(doubleArray);
+        Double actual = findService.max(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetMaxUsingStream() {
         Double expected = 34.2d;
-        Double actual = findService.getMaxUsingStream(doubleArray);
+        Double actual = findService.maxUsingStream(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
@@ -76,42 +76,42 @@ public class FindServiceImplTest {
     @Test
     public void testGetPositiveNumberAmount() {
         Long expected = 2L;
-        Long actual = findService.getPositiveNumberAmount(doubleArray);
+        Long actual = findService.positiveNumberAmount(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetPositiveNumberAmountUsingStream() {
         Long expected = 2L;
-        Long actual = findService.getPositiveNumberAmountUsingStream(doubleArray);
+        Long actual = findService.positiveNumberAmountUsingStream(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetNegativeNumberAmount() {
         Long expected = 2L;
-        Long actual = findService.getNegativeNumberAmount(doubleArray);
+        Long actual = findService.negativeNumberAmount(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetNegativeNumberAmountUsingStream() {
         Long expected = 2L;
-        Long actual = findService.getNegativeNumberAmountUsingStream(doubleArray);
+        Long actual = findService.negativeNumberAmountUsingStream(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetSum() {
         Double expected= 49.;
-        Double actual = findService.getSum(doubleArray);
+        Double actual = findService.sum(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testGetSumUsingStream() {
         Double expected= 49.;
-        Double actual = findService.getSumUsingStream(doubleArray);
+        Double actual = findService.sumUsingStream(doubleArray);
         Assert.assertEquals(expected, actual);
     }
 }

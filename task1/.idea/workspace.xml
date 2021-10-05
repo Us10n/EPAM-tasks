@@ -159,6 +159,9 @@
       <workItem from="1633332002845" duration="14133000" />
       <workItem from="1633352179616" duration="8452000" />
       <workItem from="1633360767979" duration="2791000" />
+      <workItem from="1633363872191" duration="433000" />
+      <workItem from="1633417488238" duration="1836000" />
+      <workItem from="1633419544897" duration="2693000" />
     </task>
     <servers />
   </component>
@@ -166,9 +169,19 @@
     <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/epamjwd/task1/reader/CustomReader.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="stringList==null" language="JAVA" />
+        <watch expression="fileLines" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

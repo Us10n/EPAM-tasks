@@ -19,14 +19,13 @@ public class Main {
     private static final Logger Log = LogManager.getLogger();
     private static final String path = "./src/main/resources/data/nums.txt";
 
-    public static void main(String[] args) throws CustomFileException, DoubleArrayException {
+    public static void main(String[] args) throws CustomFileException{
         CustomReader customReader = new CustomReader();
         List<String> stringList = customReader.readAll(path);
 
         List<DoubleArray> doubleArrayList = new ArrayList<>();
         stringList.forEach(line -> {
-            DoubleArray doubleArray = CustomParser.getInstance().convertStringToDoubleArray(line);
-            Optional<DoubleArray> optionalDoubleArray = Optional.ofNullable(doubleArray);
+            Optional<DoubleArray> optionalDoubleArray = CustomParser.getInstance().convertStringToDoubleArray(line);
             optionalDoubleArray.ifPresent(doubleArrayList::add);
         });
         Log.info(doubleArrayList.toString());
@@ -34,20 +33,21 @@ public class Main {
         FindServiceImpl findService = new FindServiceImpl();
         SortServiceImpl sortService = new SortServiceImpl();
         doubleArrayList.forEach(array -> {
-            Log.info("Min= " + findService.getMin(array));
-            Log.info("Max= " +findService.getMax(array));
-            Log.info("Average= "+findService.getAverage(array));
+            Log.info("Min= " + findService.min(array));
+            Log.info("Max= " + findService.max(array));
+            Log.info("Average= " + findService.average(array));
             try {
-                Log.info("After replace(0 index)= "+findService.replaceByIndex(array,0,0.));
+                Log.info("After replace(0 index)= " + findService.replaceByIndex(array, 0, 0.));
             } catch (DoubleArrayException e) {
                 e.printStackTrace();
             }
-            Log.info("Sum = "+ findService.getSum(array));
-            Log.info("Number of positive= "+findService.getPositiveNumberAmount(array));
-            Log.info("Number of negative= "+findService.getNegativeNumberAmount(array));
-            Log.info("BubbleSort(UP): "+sortService.bubbleSort(array, SortDirection.UP));
-            Log.info("SelectSort(DOWN): "+sortService.selectSort(array, SortDirection.DOWN));
-            Log.info("ShellSort(UP): "+sortService.shellSort(array, SortDirection.UP));
+            Log.info("Sum = " + findService.sum(array));
+            Log.info("Number of positive= " + findService.positiveNumberAmount(array));
+            Log.info("Number of negative= " + findService.negativeNumberAmount(array));
+            Log.info("BubbleSort(UP): " + sortService.bubbleSort(array, SortDirection.UP));
+            Log.info("SelectSort(DOWN): " + sortService.selectSort(array, SortDirection.DOWN));
+            Log.info("ShellSort(UP): " + sortService.shellSort(array, SortDirection.UP));
         });
+
     }
 }
