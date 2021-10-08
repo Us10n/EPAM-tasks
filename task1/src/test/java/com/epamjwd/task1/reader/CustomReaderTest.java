@@ -1,7 +1,6 @@
 package com.epamjwd.task1.reader;
 
 import com.epamjwd.task1.exception.CustomFileException;
-import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;

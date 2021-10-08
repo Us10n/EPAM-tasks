@@ -20,17 +20,6 @@ public class CustomParser {
         return instance;
     }
 
-    private List<String> divideToSubStrings(String str) {
-        Scanner scanner = new Scanner(str);
-        List<String> list = new ArrayList();
-
-        while (scanner.hasNext()) {
-            String next = scanner.next();
-            list.add(next);
-        }
-        return list;
-    }
-
     public Optional<DoubleArray> convertStringToDoubleArray(String str) {
         if (!CustomValidator.getInstance().isTextLineValid(str)) {
             return Optional.empty();
@@ -45,6 +34,17 @@ public class CustomParser {
 
         return Optional.ofNullable(doubleArray);
 
+    }
+
+    private List<String> divideToSubStrings(String str) {
+        Scanner scanner = new Scanner(str);
+        List<String> list = new ArrayList();
+
+        while (scanner.hasNext()) {
+            String next = scanner.next();
+            list.add(next);
+        }
+        return list;
     }
 }
 

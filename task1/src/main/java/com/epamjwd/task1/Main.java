@@ -28,11 +28,12 @@ public class Main {
             Optional<DoubleArray> optionalDoubleArray = CustomParser.getInstance().convertStringToDoubleArray(line);
             optionalDoubleArray.ifPresent(doubleArrayList::add);
         });
-        Log.info(doubleArrayList.toString());
+        Log.info("All arrays= "+doubleArrayList);
 
         FindServiceImpl findService = new FindServiceImpl();
         SortServiceImpl sortService = new SortServiceImpl();
         doubleArrayList.forEach(array -> {
+            Log.info("Current array= "+ array);
             Log.info("Min= " + findService.min(array));
             Log.info("Max= " + findService.max(array));
             Log.info("Average= " + findService.average(array));
