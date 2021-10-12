@@ -61,26 +61,6 @@ public class CubeValidator {
         return firstValidation && secondValidation;
     }
 
-    private boolean isSquare(Point a, Point b, Point c, Point d) {
-        if (a == null || b == null || c == null || d == null) {
-            return false;
-        }
-        Double edgeAB = distanceBetween(a, b);
-        Double edgeBC = distanceBetween(b, c);
-        Double edgeCD = distanceBetween(c, d);
-        Double edgeDA = distanceBetween(d, a);
-        Double edgeAC = distanceBetween(a, c);
-        Double edgeAD = distanceBetween(a, d);
-        Double[] edges = {edgeAB, edgeBC, edgeCD, edgeDA, edgeAC, edgeAD};
-        edges = (Double[]) Arrays.stream(edges).sorted().toArray();
-
-        return edges[0] == edges[1] &&
-                edges[1] == edges[2] &&
-                edges[2] == edges[3] &&
-                edges[4] == edges[5] &&
-                edges[0] * Math.sqrt(2) == edges[4];
-    }
-
     private Double distanceBetween(Point a, Point b) {
         return Math.sqrt(Math.pow(a.getX() - b.getX(), 2) + Math.pow(a.getY() - b.getY(), 2) + Math.pow(a.getZ() - b.getZ(), 2));
     }
