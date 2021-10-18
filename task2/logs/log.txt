@@ -1,9 +1,12 @@
-2021-10-12 10:10:16 [main] [main] [40] INFO  com.epamjwd.task2.Main - Current cube= Cube{id=0, name='null, bottomA=Point{x=0.0, y=1.0, z=0.0}, bottomB=Point{x=0.0, y=0.0, z=0.0}, bottomC=Point{x=1.0, y=0.0, z=0.0}, bottomD=Point{x=1.0, y=1.0, z=0.0}, topA=Point{x=0.0, y=1.0, z=1.0}, topB=Point{x=0.0, y=0.0, z=1.0}, topC=Point{x=1.0, y=0.0, z=1.0}, topD=Point{x=1.0, y=1.0, z=1.0}'}
-2021-10-12 10:10:16 [main] [main] [41] INFO  com.epamjwd.task2.Main - Surface area= 6.0
-2021-10-12 10:10:16 [main] [main] [42] INFO  com.epamjwd.task2.Main - Volume = 1.0
-2021-10-12 10:10:16 [main] [main] [40] INFO  com.epamjwd.task2.Main - Current cube= Cube{id=0, name='null, bottomA=Point{x=1.0, y=2.0, z=0.0}, bottomB=Point{x=1.0, y=1.0, z=0.0}, bottomC=Point{x=2.0, y=1.0, z=0.0}, bottomD=Point{x=2.0, y=2.0, z=0.0}, topA=Point{x=1.0, y=2.0, z=1.0}, topB=Point{x=1.0, y=1.0, z=1.0}, topC=Point{x=2.0, y=1.0, z=1.0}, topD=Point{x=2.0, y=2.0, z=1.0}'}
-2021-10-12 10:10:16 [main] [main] [41] INFO  com.epamjwd.task2.Main - Surface area= 6.0
-2021-10-12 10:10:16 [main] [main] [42] INFO  com.epamjwd.task2.Main - Volume = 1.0
-2021-10-12 10:10:16 [main] [main] [40] INFO  com.epamjwd.task2.Main - Current cube= Cube{id=0, name='null, bottomA=Point{x=1.0, y=2.0, z=1.1}, bottomB=Point{x=1.0, y=6.0, z=1.1}, bottomC=Point{x=5.0, y=6.0, z=1.1}, bottomD=Point{x=5.0, y=2.0, z=1.1}, topA=Point{x=1.0, y=2.0, z=5.1}, topB=Point{x=1.0, y=6.0, z=5.1}, topC=Point{x=5.0, y=6.0, z=5.1}, topD=Point{x=5.0, y=2.0, z=5.1}'}
-2021-10-12 10:10:16 [main] [main] [41] INFO  com.epamjwd.task2.Main - Surface area= 96.0
-2021-10-12 10:10:16 [main] [main] [42] INFO  com.epamjwd.task2.Main - Volume = 64.0
+2021-10-18 16:54:04 [main] [main] [45] INFO  com.epamjwd.task2.Main - Current cube= Cube{cubeId=0, center=Point{x=0.0, y=0.0, z=0.0}, edgeLength=2.0}
+2021-10-18 16:54:04 [main] [main] [46] INFO  com.epamjwd.task2.Main - Surface area= 24.0
+2021-10-18 16:54:04 [main] [main] [47] INFO  com.epamjwd.task2.Main - Volume = 8.0
+2021-10-18 16:54:04 [main] [main] [49] INFO  com.epamjwd.task2.Main - Volume ratio= 0.3333333333333333
+2021-10-18 16:54:04 [main] [main] [45] INFO  com.epamjwd.task2.Main - Current cube= Cube{cubeId=0, center=Point{x=1.0, y=1.0, z=1.0}, edgeLength=3.0}
+2021-10-18 16:54:04 [main] [main] [46] INFO  com.epamjwd.task2.Main - Surface area= 54.0
+2021-10-18 16:54:04 [main] [main] [47] INFO  com.epamjwd.task2.Main - Volume = 27.0
+2021-10-18 16:54:04 [main] [main] [49] INFO  com.epamjwd.task2.Main - Volume ratio= 2.0
+2021-10-18 16:54:04 [main] [main] [45] INFO  com.epamjwd.task2.Main - Current cube= Cube{cubeId=0, center=Point{x=-1.0, y=1.0, z=1.0}, edgeLength=3.0}
+2021-10-18 16:54:04 [main] [main] [46] INFO  com.epamjwd.task2.Main - Surface area= 54.0
+2021-10-18 16:54:04 [main] [main] [47] INFO  com.epamjwd.task2.Main - Volume = 27.0
+2021-10-18 16:54:04 [main] [main] [49] INFO  com.epamjwd.task2.Main - Volume ratio= 2.0

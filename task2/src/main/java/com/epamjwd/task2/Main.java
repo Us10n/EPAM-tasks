@@ -17,29 +17,36 @@ import java.util.Optional;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger();
-    private static final String path = "./src/main/resources/data/coordinates.txt";
+    private static final String fileName = "/data/parameters.txt";
 
 
     public static void main(String[] args) throws CustomFileException {
         CustomReaderImpl reader = new CustomReaderImpl();
-        List<String> lines = reader.readAll(path);
+        List<String> lines = reader.readAll(fileName);
 
         List<Cube> cubes = new ArrayList<>();
         for (String line : lines) {
-            Optional<Point[]> points = CustomParserImpl.getInstance().stringToPointArray(line);
+            Optional<List<Double>> cubeParameters = CustomParserImpl.getInstance()
+                    .stringToCubeParameters(line);
+
             Optional<Cube> cube = Optional.empty();
-            if (points.isPresent()) {
-                cube = CustomFactory.getInstance().createCube(points.get());
+            if (cubeParameters.isPresent()) {
+                cube = CustomFactory.getInstance()
+                        .createCube(cubeParameters.get());
             }
+
             if (cube.isPresent() && CubeValidator.getInstance().isCube(cube.get())) {
                 cubes.add(cube.get());
             }
         }
+
         CalculationCubeServiceImpl cubeService = new CalculationCubeServiceImpl();
         for (Cube cube : cubes) {
             logger.info("Current cube= " + cube);
             logger.info("Surface area= " + cubeService.surfaceArea(cube));
             logger.info("Volume = " + cubeService.volume(cube));
+            Point secantPlanePoint = new Point(0.5, 0.5, 0.5);
+            logger.info("Volume ratio= " + cubeService.volumeRatio(cube, secantPlanePoint));
         }
 
     }
