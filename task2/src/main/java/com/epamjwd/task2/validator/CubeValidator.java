@@ -18,5 +18,4 @@ public class CubeValidator {
     public boolean isCube(Cube cube) {
         return cube != null && cube.getEdgeLength() > 0;
     }
-
 }
