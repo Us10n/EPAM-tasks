@@ -23,12 +23,13 @@ public class CustomParserImpl implements CustomParser {
         return instance;
     }
 
-    public Optional<List<Double>> stringToCubeParameters(String str) {
-        if (!TextValidator.getInstance().isLineContainParams(str)) {
+    @Override
+    public Optional<List<Double>> stringToCubeSpecification(String str) {
+        if (!TextValidator.getInstance().isLineContainSpecification(str)) {
             return Optional.empty();
         }
+        
         List<Double> cubeParameters = divideToDoubles(str);
-
 
         return Optional.of(cubeParameters);
     }

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/computer"
+        xmlns:tns="http://www.example.com/computer"
+        elementFormDefault="qualified">
+
+    <element name="computer">
+        <complexType>
+            <sequence>
+                <element ref="tns:device" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="device" type="tns:Device" abstract="true"/>
+    <element name="processor" type="tns:Processor" substitutionGroup="tns:device"/>
+    <element name="mouse" type="tns:Mouse" substitutionGroup="tns:device"/>
+
+    <complexType name="Device">
+        <sequence>
+            <element name="release" type="tns:Date"/>
+            <element name="origin" type="tns:Country"/>
+            <element name="price" type="positiveInteger"/>
+            <element name="parameters" type="tns:Parameter"/>
+            <element name="critical" type="boolean" default="true"/>
+        </sequence>
+        <attribute name="id" type="ID" use="required"/>
+        <attribute name="brand" type="string" use="optional"/>
+    </complexType>
+
+    <complexType name="Processor">
+        <complexContent>
+            <extension base="tns:Device">
+                <sequence>
+                    <element name="clock-speed" type="tns:PositiveFloat"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Mouse">
+        <complexContent>
+            <extension base="tns:Device">
+                <sequence>
+                    <element name="dpi" type="positiveInteger"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Parameter">
+        <sequence>
+            <element name="peripheral" type="boolean"/>
+            <element name="power-usage" type="tns:PositiveFloat"/>
+            <element name="cooler-bundled" type="boolean"/>
+            <element name="group" type="tns:Group"/>
+            <element name="port" type="tns:Port"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="Port">
+        <restriction base="string">
+            <enumeration value="USB"/>
+            <enumeration value="COM"/>
+            <enumeration value="LPT"/>
+            <enumeration value="SOCKET"/>
+            <enumeration value="LGA"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Country">
+        <restriction base="string">
+            <enumeration value="China"/>
+            <enumeration value="America"/>
+            <enumeration value="Japan"/>
+            <enumeration value="German"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Group">
+        <restriction base="string">
+            <enumeration value="IO"/>
+            <enumeration value="Multimedia"/>
+            <enumeration value="Computing"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="ID">
+        <restriction base="string">
+            <pattern value="device-\d{1,5}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="PositiveFloat">
+        <restriction base="string">
+            <pattern value="\d+.(\d+)?"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Date">
+        <restriction base="string">
+            <pattern value="\d{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])"/>
+        </restriction>
+    </simpleType>
+
+</schema>

@@ -5,9 +5,6 @@ public class Point {
     private Double y;
     private Double z;
 
-    public Point() {
-    }
-
     public Point(Double x, Double y, Double z) {
         this.x = x;
         this.y = y;
@@ -43,6 +40,11 @@ public class Point {
 
     public void setZ(Double z) {
         this.z = z;
+    }
+
+    @Override
+    protected Point clone() throws CloneNotSupportedException {
+        return new Point(x, y, z);
     }
 
     @Override

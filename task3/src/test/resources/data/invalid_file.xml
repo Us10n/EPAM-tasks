@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<computer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.example.com/computer"
+          xsi:schemaLocation="http://www.example.com/computer computer.xsd">
+    <mouse id="device-1" brand="Razer">
+        <release>2020-12-12</release>
+        <origin>China</origin>
+        <price>15</price>
+        <parameters>
+            <peripheral>true</peripheral>
+            <power-usage>0.25</power-usage>
+            <cooler-bundled>false</cooler-bundled>
+            <group>IO</group>
+            <port>USB</port>
+        </parameters>
+    </mouse>
+    <processor id="device-2" brand="Intel">
+        <release>2019-06-11</release>
+        <origin>America</origin>
+        <price>100</price>
+        <parameters>
+            <peripheral>false</peripheral>
+            <power-usage>15.0</power-usage>
+            <cooler-bundled>true</cooler-bundled>
+            <group>Computing</group>
+            <port>SOCKET</port>
+        </parameters>
+        <critical>true</critical>
+        <clock-speed>1111.1</clock-speed>
+    </processor>
+</computer>

@@ -17,17 +17,21 @@ public class CustomReaderImpl implements CustomReader {
 
     public List<String> readAll(String fileName) throws CustomFileException {
         URL resourceUrl = this.getClass().getResource(fileName);
+
         if (resourceUrl == null) {
             logger.error("File with name" + fileName + " wasn't found");
-            throw new CustomFileException("File with name" + fileName + " wasn't found");
+            throw new CustomFileException("File with name :" + fileName + " wasn't found");
         }
+
         String filePath = resourceUrl.getPath();
         List<String> fileLines;
+
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))) {
             fileLines = bufferedReader.lines().collect(Collectors.toList());
         } catch (IOException e) {
             throw new CustomFileException(e);
         }
+
         return fileLines;
     }
 

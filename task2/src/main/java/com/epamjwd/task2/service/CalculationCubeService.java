@@ -7,5 +7,4 @@ public interface CalculationCubeService {
     Double surfaceArea(Cube cube);
     Double volume(Cube cube);
     Double volumeRatio(Cube cube, Point secantPlanePoint);
-
 }

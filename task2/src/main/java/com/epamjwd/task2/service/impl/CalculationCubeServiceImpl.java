@@ -22,6 +22,7 @@ public class CalculationCubeServiceImpl implements CalculationCubeService {
         double planeZPosition = secantPlanePoint.getZ();
         double cubeZBottomPosition = cube.getCenter().getZ() - cube.getEdgeLength() / 2;
         double cubeZTopPosition = cube.getCenter().getZ() + cube.getEdgeLength() / 2;
+
         if (planeZPosition >= cubeZTopPosition || planeZPosition <= cubeZBottomPosition) {
             return 1.;
         }

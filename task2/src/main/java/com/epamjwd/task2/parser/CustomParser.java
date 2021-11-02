@@ -4,5 +4,5 @@ import java.util.List;
 import java.util.Optional;
 
 public interface CustomParser {
-    Optional<List<Double>> stringToCubeParameters(String str);
+    Optional<List<Double>> stringToCubeSpecification(String str);
 }
