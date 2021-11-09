@@ -5,7 +5,7 @@ import com.epamjwd.task4.parcer.TextParser;
 
 public class CharacterParser implements TextParser {
     @Override
-    public CompositeComponent parse(String component) {
+    public CompositeComponent parse(String component) {//todo
         return null;
     }
 }

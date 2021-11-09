@@ -8,5 +8,5 @@ public class ParagraphParser implements TextParser {
     @Override
     public CompositeComponent parse(String component) {
         return null;
-    }
+    }//todo
 }
