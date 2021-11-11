@@ -1,13 +1,13 @@
 package com.epamjwd.task4.entity;
 
 public enum ComponentType {
-    SYMBOL(""),
-    LETTER(""),
-    MARK(""),
+    SIGN(""),
+    CHARACTER(""),
+    EXPRESSION(""),
     WORD(""),
     LEXEME(" "),
     SENTENCE(""),
-    PARAGRAPH("\n\t");
+    PARAGRAPH("\r\n");
     private final String delimiter;
 
     ComponentType(String delimiter) {

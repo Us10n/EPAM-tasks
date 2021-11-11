@@ -51,7 +51,7 @@ public class CompositeComponent implements TextComponent{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("CompositeComponent{");
+        final StringBuilder sb = new StringBuilder();
         String componentDelimiter = componentType.getDelimiter();
         for (TextComponent textComponent : textComponents) {
             sb.append(textComponent.toString()).append(componentDelimiter);

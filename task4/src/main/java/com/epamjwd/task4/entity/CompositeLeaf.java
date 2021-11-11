@@ -2,11 +2,11 @@ package com.epamjwd.task4.entity;
 
 import java.util.List;
 
-public class CharacterLeaf implements TextComponent{
+public class CompositeLeaf implements TextComponent{
     private ComponentType componentType;
     private Character character;
 
-    public CharacterLeaf(ComponentType componentType, Character character) {
+    public CompositeLeaf(ComponentType componentType, Character character) {
         this.componentType = componentType;
         this.character = character;
     }
@@ -36,7 +36,7 @@ public class CharacterLeaf implements TextComponent{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        CharacterLeaf that = (CharacterLeaf) o;
+        CompositeLeaf that = (CompositeLeaf) o;
 
         if (componentType != that.componentType) return false;
         return character != null ? character.equals(that.character) : that.character == null;
@@ -51,10 +51,6 @@ public class CharacterLeaf implements TextComponent{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("CharacterLeaf{");
-        sb.append("componentType=").append(componentType);
-        sb.append(", character=").append(character);
-        sb.append('}');
-        return sb.toString();
+        return character.toString();
     }
 }
