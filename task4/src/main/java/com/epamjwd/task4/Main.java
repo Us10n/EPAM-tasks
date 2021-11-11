@@ -2,8 +2,8 @@ package com.epamjwd.task4;
 
 import com.epamjwd.task4.entity.CompositeComponent;
 import com.epamjwd.task4.exception.FileException;
-import com.epamjwd.task4.parcer.TextParser;
-import com.epamjwd.task4.parcer.impl.ParagraphParser;
+import com.epamjwd.task4.parser.TextParser;
+import com.epamjwd.task4.parser.impl.ParagraphParser;
 import com.epamjwd.task4.reader.impl.CustomReaderImpl;
 import com.epamjwd.task4.service.impl.TextServiceImpl;
 import org.apache.logging.log4j.LogManager;
