@@ -1,8 +1,7 @@
 package com.epamjwd.task4.parser;
 
-import com.epamjwd.task4.entity.CompositeComponent;
+import com.epamjwd.task4.entity.TextComposite;
 
 public interface TextParser {
-    CompositeComponent parse(String component);
-
+    TextComposite parse(String component);
 }

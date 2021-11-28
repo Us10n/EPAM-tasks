@@ -1,7 +1,7 @@
 package com.epamjwd.task4.parser.impl;
 
 import com.epamjwd.task4.entity.ComponentType;
-import com.epamjwd.task4.entity.CompositeComponent;
+import com.epamjwd.task4.entity.TextComposite;
 import com.epamjwd.task4.entity.TextComponent;
 import com.epamjwd.task4.parser.TextParser;
 
@@ -13,8 +13,8 @@ public class SentenceParser implements TextParser {
     private final TextParser lexemeParser=new LexemeParser();
 
     @Override
-    public CompositeComponent parse(String paragraph) {
-        CompositeComponent sentenceComposite = new CompositeComponent(ComponentType.SENTENCE);
+    public TextComposite parse(String paragraph) {
+        TextComposite sentenceComposite = new TextComposite(ComponentType.SENTENCE);
         Pattern sentencePattern=Pattern.compile(SENTENCE_REGEX);
         Matcher sentenceMatcher=sentencePattern.matcher(paragraph);
         while (sentenceMatcher.find()){
