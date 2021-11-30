@@ -1,0 +1,3 @@
+2021-11-30 10:24:00 [Thread-14] [shipCars] [72] INFO  com.epamjwd.task5.entity.Ferry - Ferry finished shipping cars
+2021-11-30 10:24:02 [Thread-7] [obtainPlace] [56] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-7 took place on ferry (Current weight=610, Current square=1010)
+2021-11-30 10:24:04 [Thread-0] [obtainPlace] [56] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-0 took place on ferry (Current weight=1502, Current square=2510)

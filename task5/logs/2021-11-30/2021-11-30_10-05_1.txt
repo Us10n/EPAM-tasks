@@ -1,0 +1,21 @@
+2021-11-30 10:05:04 [main] [main] [17] INFO  com.epamjwd.task5.Main - started
+2021-11-30 10:05:04 [Thread-0] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-0 was run
+2021-11-30 10:05:04 [Thread-4] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-4 was run
+2021-11-30 10:05:04 [Thread-2] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-2 was run
+2021-11-30 10:05:04 [Thread-1] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-1 was run
+2021-11-30 10:05:04 [Thread-3] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-3 was run
+2021-11-30 10:05:04 [Thread-5] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-5 was run
+2021-11-30 10:05:04 [Thread-6] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-6 was run
+2021-11-30 10:05:04 [Thread-9] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-9 was run
+2021-11-30 10:05:04 [Thread-7] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-7 was run
+2021-11-30 10:05:04 [Thread-8] [run] [45] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-8 was run
+2021-11-30 10:05:07 [Thread-0] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-0 took place on ferry
+2021-11-30 10:05:10 [Thread-4] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-4 took place on ferry
+2021-11-30 10:05:13 [Thread-3] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-3 took place on ferry
+2021-11-30 10:05:16 [Thread-7] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-7 took place on ferry
+2021-11-30 10:05:19 [Thread-9] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-9 took place on ferry
+2021-11-30 10:05:22 [Thread-1] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-1 took place on ferry
+2021-11-30 10:05:25 [Thread-2] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-2 took place on ferry
+2021-11-30 10:05:30 [Thread-6] [shipCars] [63] INFO  com.epamjwd.task5.entity.Ferry - Ferry finish shipping cars
+2021-11-30 10:05:33 [Thread-8] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-8 took place on ferry
+2021-11-30 10:05:36 [Thread-5] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-5 took place on ferry

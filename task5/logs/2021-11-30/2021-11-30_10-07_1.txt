@@ -1,0 +1,7 @@
+2021-11-30 10:07:02 [Thread-6] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-6 took place on ferry (Current weight=2542, Current square=6740)
+2021-11-30 10:07:05 [Thread-7] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-7 took place on ferry (Current weight=3152, Current square=7750)
+2021-11-30 10:07:08 [Thread-8] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-8 took place on ferry (Current weight=4044, Current square=9250)
+2021-11-30 10:07:11 [Thread-9] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-9 took place on ferry (Current weight=4994, Current square=10950)
+2021-11-30 10:07:16 [Thread-5] [shipCars] [63] INFO  com.epamjwd.task5.entity.Ferry - Ferry finish shipping cars
+2021-11-30 10:07:19 [Thread-1] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-1 took place on ferry (Current weight=900, Current square=1600)
+2021-11-30 10:07:22 [Thread-3] [obtainPlace] [47] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-3 took place on ferry (Current weight=1095, Current square=4100)

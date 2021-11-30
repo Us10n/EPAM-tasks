@@ -1,0 +1,13 @@
+2021-11-29 21:07:53 [main] [main] [17] INFO  com.epamjwd.task5.Main - started
+2021-11-29 21:07:53 [Thread-0] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-0 was run
+2021-11-29 21:07:53 [Thread-3] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-3 was run
+2021-11-29 21:07:53 [Thread-6] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-6 was run
+2021-11-29 21:07:53 [Thread-2] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-2 was run
+2021-11-29 21:07:53 [Thread-7] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-7 was run
+2021-11-29 21:07:53 [Thread-1] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-1 was run
+2021-11-29 21:07:53 [Thread-4] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-4 was run
+2021-11-29 21:07:53 [Thread-5] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-5 was run
+2021-11-29 21:07:53 [Thread-8] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-8 was run
+2021-11-29 21:07:53 [Thread-9] [run] [34] INFO  com.epamjwd.task5.entity.Car - Car thread Thread-9 was run
+2021-11-29 21:07:56 [Thread-0] [takePlace] [46] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-0 took place on ferry
+2021-11-29 21:07:59 [Thread-2] [takePlace] [46] INFO  com.epamjwd.task5.entity.Ferry - The car Thread-2 took place on ferry
